@@ -1,4 +1,4 @@
-package tramyardg.dp.creational;
+package com.tramyardg.dp.creational;
 
 public class CreationalMain {
 

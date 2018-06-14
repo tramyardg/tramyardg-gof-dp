@@ -1,4 +1,4 @@
-package tramyardg.dp;
+package com.tramyardg.dp;
 
 import static org.junit.Assert.*;
 

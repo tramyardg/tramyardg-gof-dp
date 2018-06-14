@@ -1,4 +1,4 @@
-package tramyardg.dp.structural;
+package com.tramyardg.dp.structural;
 
 public class StructuralMain {
 

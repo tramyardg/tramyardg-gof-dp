@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="tramyardg.dp.creational.singleton.Singleton" project="gof-dp" 
-    file="/gof-dp/src/main/java/tramyardg/dp/creational/singleton/Singleton.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="com.tramyardg.dp.creational.singleton.Singleton" project="gof-dp" 
+    file="/gof-dp/src/main/java/com/tramyardg/dp/creational/singleton/Singleton.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="135" width="150" x="108" y="39"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +11,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="tramyardg.dp.creational.singleton.Demo" project="gof-dp" 
-    file="/gof-dp/src/main/java/tramyardg/dp/creational/singleton/Demo.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="com.tramyardg.dp.creational.singleton.Demo" project="gof-dp" 
+    file="/gof-dp/src/main/java/com/tramyardg/dp/creational/singleton/Demo.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="460" y="95"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -21,8 +22,12 @@
   </class>  
   <association id="3">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="4" name="instance"/>      
-      <multiplicity id="5" minimum="0" maximum="1"/>    
+      <attribute id="4" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="5" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

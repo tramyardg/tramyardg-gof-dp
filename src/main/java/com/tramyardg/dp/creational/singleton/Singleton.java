@@ -1,4 +1,4 @@
-package tramyardg.dp.creational.singleton;
+package com.tramyardg.dp.creational.singleton;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
