@@ -17,3 +17,4 @@ the same construction process can create different representations.
 - Product: represents the complex object being built.
 
 ### UML class diagram
+![uml](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/builder/img_builder_uml.png)
