@@ -9,7 +9,13 @@ Define the interface for creating an object, but let subclasses decide which cla
 Factory Method lets class defer instantiation to subclasses.
 ```
 
+### Components
+1. An interface or Abstract class (public)
+2. Set of implementation subclasses (private)
+3. A factory method (public) which a client class access
+
 ### UML class diagram
+![uml](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/factorymethod/img_factory_method_uml.png)
 
 ### Benefits
 - Loose coupling allows changing the internals without impacting the customer code.

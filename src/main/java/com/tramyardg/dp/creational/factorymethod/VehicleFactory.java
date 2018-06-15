@@ -3,12 +3,12 @@ package com.tramyardg.dp.creational.factorymethod;
 public class VehicleFactory {
 
     public Vehicle getVehicle(String vehicleType) throws VehicleTypeNotFoundException {
-
+	
+	Vehicle vehicle = null;
+	
 	if (vehicleType == null) {
 	    return null;
 	}
-
-	Vehicle vehicle = null;
 
 	switch (vehicleType) {
 	case "car":
