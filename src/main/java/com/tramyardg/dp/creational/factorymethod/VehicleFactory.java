@@ -21,7 +21,7 @@ public class VehicleFactory {
 	    vehicle = new Motorcycle();
 	    break;
 	default:
-	    throw new VehicleTypeNotFoundException("Vehicle type not supported.");
+	    throw new VehicleTypeNotFoundException();
 	}
 
 	return vehicle;
