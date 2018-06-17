@@ -24,3 +24,15 @@ use the new interfaces, we can write a *wrapper* class that acts as a bridge bet
 application and the new OMS software. With this approach, the e-commerce application can still
 use the old interface.
 
+### UML class diagram
+#### Before adapter
+![Adapter UML diagram before](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/img_adapter_before_uml.png)
+#### Using the the adapter
+![Adapter UML diagram after](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/img_adapter_after_uml.png)
+
+### Benefits
+- Class adapter can override adaptee's behaviour.
+- Object adapter allows a single adapter to work with many adaptees.
+- Helps achieve reusability and flexibility.
+- Client class is not complicated by having to use a different interface and can use
+polymorphism to swap between different implementations of adapters.
