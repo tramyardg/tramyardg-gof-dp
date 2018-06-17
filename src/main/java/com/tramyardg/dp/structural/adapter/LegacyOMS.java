@@ -19,7 +19,7 @@ public class LegacyOMS {
 
     public void addItem(Item itemXML) {
 	cart.add(itemXML);
-	logger.info(itemXML.getName() + " " + itemXML.getPrice() + " ");
+	logger.info(itemXML.getName() + " " + itemXML.getPrice());
     }
 
     public void makePayment(Payment paymentXML) {
