@@ -3,9 +3,8 @@
 - To perform impedance matching.
 
 ### Intent
-```
 Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
-```
+
 
 ### Components
 1. Target - defines the domain-specific interface that client uses.
@@ -21,13 +20,13 @@ a *different* interface and it requires a lot of code modification in the existi
 
 Adapter pattern applies in these situations. Instead of modifying the existing application to
 use the new interfaces, we can write a *wrapper* class that acts as a bridge between the current 
-application and the new OMS software. With this approach, the e-commerce application can still
+application and the **new OMS software**. With this approach, the e-commerce application can still
 use the old interface.
 
 ### UML class diagram
 #### Before adapter
 ![Adapter UML diagram before](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/img_adapter_before_uml.png)
-#### Using the the adapter
+#### Using the adapter with new OMS
 ![Adapter UML diagram after](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/img_adapter_after_uml.png)
 
 ### Benefits
