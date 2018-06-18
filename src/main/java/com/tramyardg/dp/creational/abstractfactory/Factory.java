@@ -13,6 +13,8 @@ public abstract class Factory {
      * This is the factory method exposed to the client. Client requests for a
      * factory instance by passing the type. Client does not need to know about
      * which & how object is created internally.
+     * 
+     * Hides the instantiation of factory in close door behind the client. 
      */
     public static Factory getFactory(String vehicleType) throws UnknownVehicleTypeException {
 
