@@ -20,15 +20,22 @@ public class PrototypeClient {
 	// adding App server software 
 	appServer.install(" + App Server S/W");
 	
+	// cloning App server
+	MachineImage databaseServer = appServer.clone();
+	// adding database server component
+	databaseServer.install(" + Database Server S/W");
+	
 	// printing Linux virtual machine with web server software
 	logger.info("Web Server configuration: ");
 	webServer.printSoftware();
 	
-	System.out.println();	
-	
 	// printing Linux virtual machine with web server and app server software
 	logger.info("Web Server configuration + App Server: ");
 	appServer.printSoftware();
+	
+	// printing Linux virtual machine with web server, app server, and database server components.
+	logger.info("Linux virtual machine + Norton + Web Server + App Server + Database Server: ");
+	databaseServer.printSoftware();
 	
     }
 
