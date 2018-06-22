@@ -20,5 +20,10 @@ public class CarEngine implements Engine {
     public void test() {
 	logger.info("testing car engine");
     }
+    
+    @Override
+    public String getVehicleType() {
+	return "car";
+    }
 
 }

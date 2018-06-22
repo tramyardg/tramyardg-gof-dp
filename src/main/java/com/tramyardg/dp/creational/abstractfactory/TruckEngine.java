@@ -20,5 +20,10 @@ public class TruckEngine implements Engine {
     public void test() {
 	logger.info("testing truck engine");
     }
+    
+    @Override
+    public String getVehicleType() {
+	return "truck";
+    }
 
 }
