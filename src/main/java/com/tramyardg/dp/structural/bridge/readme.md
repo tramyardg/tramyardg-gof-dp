@@ -16,6 +16,26 @@ a Color interface that comprises of red, green, and blue color.
 ### UML class diagram
 ![Bridge Design Pattern](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/bridge/img_bridge_pattern_uml.png)
 
+### Main program
+```java
+
+	Shape[] shapes = { new Circle(new Red()), new Rectangle(new Green()), new Square(new Blue()) };
+
+	for (Shape shape : shapes) {
+	    shape.draw();
+	}
+	
+	/*
+	INFO: draw circle in
+	INFO: red color
+	INFO: draw rectangle in 
+	INFO: green color
+	INFO: draw square in 
+	INFO: blue color
+	*/
+
+```
+
 ### Benefits
 - Decoupling allows us to choose the implementation at runtime.
 - Compile-time dependencies on the implementation are eliminated.
