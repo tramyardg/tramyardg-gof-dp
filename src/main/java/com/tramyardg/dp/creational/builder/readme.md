@@ -18,3 +18,21 @@ the same construction process can create different representations.
 
 ### UML class diagram
 ![uml](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/builder/img_builder_uml.png)
+
+### Main program
+```java
+
+	// construct a concrete house
+	HouseBuilder concreteHouseBuilder = new ConcreteHouseBuilder();
+	HouseBuildDirector concreteHouseBuildDirector = new HouseBuildDirector(concreteHouseBuilder);
+	String concreteHouse = concreteHouseBuildDirector.construct().toString();
+	logger.log(Level.INFO, concreteHouse);
+	// prints ()=> INFO: House [floorType=concrete, wallType=concrete, roofType=concrete]
+	
+	// construct a wooden house
+	HouseBuilder woodenHouseBuilder = new WoodenHouseBuilder();
+	HouseBuildDirector woodenHouseBuildDirector = new HouseBuildDirector(woodenHouseBuilder);
+	String woodenHouse = woodenHouseBuildDirector.construct().toString();
+	logger.log(Level.INFO, woodenHouse);
+	// prints ()=> INFO: House [floorType=wood, wallType=wood, roofType=wood]
+```
