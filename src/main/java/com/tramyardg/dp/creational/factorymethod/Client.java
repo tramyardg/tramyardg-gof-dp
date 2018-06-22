@@ -13,13 +13,12 @@ import java.util.logging.Logger;
  */
 public class Client {
 
-    private final static Logger logger = Logger.getLogger(Client.class.getName());
+    static Logger logger = Logger.getLogger(Client.class.getName());
     
     public static void main(String[] args) {
 	
 	VehicleFactory factory = new VehicleFactory();
 	try {
-	    
 	    Vehicle car = factory.getVehicle("car");
 	    car.design();
 	    car.manufacture();
@@ -35,7 +34,6 @@ public class Client {
 	    Vehicle notSupported = factory.getVehicle("bus");
 	    notSupported.design();
 	    notSupported.manufacture();
-	    
 	} catch (VehicleTypeNotFoundException e) {
 	    logger.info(e.getMessage());
 	}
