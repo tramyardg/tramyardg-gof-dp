@@ -13,6 +13,7 @@ an algorithm without changing the algorithm's structure.
 - Concrete implementations of the steps (methods) defined in the abstract class
 
 ### UML Class Diagram
+![Template Method](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/behavioral/templatemethod/img_template_method_uml.png)
 
 ### Main program (Client)
 
