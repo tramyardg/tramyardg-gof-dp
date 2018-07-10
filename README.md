@@ -1,4 +1,6 @@
 ## Design Patterns
+No copyright infringement intended. For educational purpose only.
+All credits goes to the app [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en).
 
 ### Creational
 - [x] Abstract Factory
@@ -25,5 +27,5 @@
 - [ ] Memento
 - [ ] Observer
 - [ ] State
-- [ ] Template Method
+- [x] Template Method
 - [ ] Visitor
