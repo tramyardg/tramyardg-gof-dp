@@ -31,5 +31,20 @@ clients treat individual objects and compositions of objects uniformly.
 	manager3.add(manager2);
 	manager3.add(manager1);
 	manager3.print();
-	
+	// Thor Walton is in the top of the hierarchy.
+	// Gavin Joyce is at the bottom.
+```
+```java
+// prints
+Jul 10, 2018 11:30:54 PM com.tramyardg.dp.structural.composite.Manager print
+INFO: [name=Thor Walton, salary=98283.0]
+Jul 10, 2018 11:30:55 PM com.tramyardg.dp.structural.composite.Manager print
+INFO: [name=Michael Bruce, salary=80172.0]
+Jul 10, 2018 11:30:55 PM com.tramyardg.dp.structural.composite.Manager print
+INFO: [name=Jonas Alexander, salary=74128.0]
+Jul 10, 2018 11:30:55 PM com.tramyardg.dp.structural.composite.Developer print
+INFO: [name=Jenette Caldwell, salary=60323.0]
+Jul 10, 2018 11:30:55 PM com.tramyardg.dp.structural.composite.Developer print
+INFO: [name=Gavin Joyce, salary=55624.0]
+
 ```
