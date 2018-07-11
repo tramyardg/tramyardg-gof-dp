@@ -16,9 +16,6 @@ public class Client {
 	manager3.add(manager1);
 	manager3.print();
 	
-	// Thor Walton is in the top of the hierarchy.
-	// Gavin Joyce is at the bottom.
-	
     }
     
 }

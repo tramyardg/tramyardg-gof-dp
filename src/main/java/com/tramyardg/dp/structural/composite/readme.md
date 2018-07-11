@@ -31,7 +31,7 @@ clients treat individual objects and compositions of objects uniformly.
 	manager3.add(manager2);
 	manager3.add(manager1);
 	manager3.print();
-	// Thor Walton is in the top of the hierarchy.
+	// Thor Walton is at the top of the hierarchy.
 	// Gavin Joyce is at the bottom.
 ```
 ```java
