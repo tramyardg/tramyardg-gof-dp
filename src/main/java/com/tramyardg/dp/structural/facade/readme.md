@@ -7,6 +7,9 @@
 ### Intent
 Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes a subsystem easier to use.
 
+### UML class diagram
+![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/img_facade_uml.png)
+
 ### Main program (Client)
 
 ```java
@@ -15,7 +18,10 @@ Provide a unified interface to a set of interfaces in a subsystem. Facade define
 	WeddingPlanner planner = new WeddingPlanner();
 	planner.organize();
 	
-	// prints
+	// explanation:
+	// WeddingPlanner hides the complexity of a large subsystem.
+	// It basically does reservations, ordering, and organizes everything for you.
+	
 	/*
 	* com.tramyardg.dp.structural.facade.Client main
 	* INFO: Wedding planning activities:
@@ -30,3 +36,14 @@ Provide a unified interface to a set of interfaces in a subsystem. Facade define
 	*/
 	
 ```
+
+### Benefits
+- Number of objects the client interact with is minimal which reduces the compilation complexity.
+- Promotes **loose coupling**
+- Allows the client to use the subsystem interfaces.
+
+### Drawback(s)
+- One more layer is introduced in the system which may impact the performance.
+
+
+
