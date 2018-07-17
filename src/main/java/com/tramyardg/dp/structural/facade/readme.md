@@ -1,5 +1,5 @@
 ## Facade
----
+
 ### When to use
 - To provide a simplified interface to the overall functionality of a complex subsystem.
 - To promote subsystem independence and portability.
