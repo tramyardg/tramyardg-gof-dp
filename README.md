@@ -13,7 +13,7 @@ All credits goes to the app [GoF Design Patterns of japeesoft](https://play.goog
 - [x] [Adapter](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/adapter)
 - [x] [Bridge](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/bridge)
 - [x] [Composite](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/composite)
-- [ ] Decorator
+- [x] [Decorator](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/decorator)
 - [x] [Facade](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/facade)
 - [ ] Flyweight
 - [ ] Proxy
