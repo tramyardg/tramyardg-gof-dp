@@ -6,6 +6,7 @@ public class Client {
 
     public static void main(String[] args) {
 
+	// InitDispenser default constructor was called to initialize dispenser
 	InitDispenser init = new InitDispenser();
 
 	while (true) {
