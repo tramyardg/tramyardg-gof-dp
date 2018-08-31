@@ -19,7 +19,7 @@ All credits goes to the app [GoF Design Patterns of japeesoft](https://play.goog
 - [ ] Proxy
 
 ### Behavioral
-- [ ] Chain of Responsibility
+- [x] [Chain of Responsibility](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/chainofresponsibility)
 - [ ] Command
 - [ ] Interpreter
 - [ ] Iterator
