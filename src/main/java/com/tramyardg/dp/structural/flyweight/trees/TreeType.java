@@ -18,7 +18,7 @@ public class TreeType {
     public void draw(Graphics g, int x, int y) {
 	// trunks
 	g.setColor(Color.BLACK);
-	g.fillRect(x - 1, y, 3, 5);
+	g.fillRect(x - 1, y, 4, 6);
 	// head of the tree
 	g.setColor(color);
 	g.fillOval(x - 5, y - 10, 10, 10);

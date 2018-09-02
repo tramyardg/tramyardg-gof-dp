@@ -18,6 +18,7 @@ public class Forest extends JFrame {
     public void planTree(int x, int y, String name, Color color, String otherTreeData) {
 	TreeType type = TreeFactory.getTreeType(name, color, otherTreeData);
 	Tree tree = new Tree(x, y, type);
+	// name, color and type bundle
 	trees.add(tree);
     }
     
