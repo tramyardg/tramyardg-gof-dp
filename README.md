@@ -26,6 +26,6 @@ All credits goes to the app [GoF Design Patterns of japeesoft](https://play.goog
 - [ ] Mediator
 - [ ] Memento
 - [ ] Observer
-- [ ] State
+- [x] [State](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/state)
 - [x] [Template Method](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/templatemethod)
 - [ ] Visitor
