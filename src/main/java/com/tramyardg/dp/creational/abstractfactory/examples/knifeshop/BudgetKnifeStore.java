@@ -1,4 +1,4 @@
-package com.tramyardg.dp.creational.factorymethod.examples.knifeshop;
+package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
 public class BudgetKnifeStore extends KnifeStore {
 
