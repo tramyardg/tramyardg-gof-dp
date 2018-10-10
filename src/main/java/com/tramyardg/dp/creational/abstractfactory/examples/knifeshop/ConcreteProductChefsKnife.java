@@ -17,4 +17,8 @@ public class ConcreteProductChefsKnife extends ProductKnife {
 	System.out.println("Shipping chefs knife");
     }
     
+    public void test() {
+	
+    }
+    
 }
