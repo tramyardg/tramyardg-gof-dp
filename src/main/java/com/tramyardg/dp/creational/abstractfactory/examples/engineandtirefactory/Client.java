@@ -1,4 +1,4 @@
-package com.tramyardg.dp.creational.abstractfactory;
+package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory;
 
 import java.util.Scanner;
 import java.util.logging.Logger;

@@ -8,44 +8,16 @@
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ### Components
-1. An Abstract Factory class (public)
-2. Factory implementations for various families (protected)
-3. Interfaces for various products (public)
-4. Set of products implementation for various families (protected)
+1. Creator (abstract) - factory method defined here
+2. Concrete creator
+3. Product (abstract)
+4. Concrete products
 
-### UML class diagram
-![Abstract Factory](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/img_abstract_factory_uml.png)
-
-### Main program
-```java
-	
-	Scanner in = new Scanner(System.in);
-	String vehicleType = in.nextLine().toLowerCase();
-	Factory factory;
-	try {
-	    // will return the factory based on the vehicle type provided
-	    // just like a Singleton
-	    factory = Factory.getFactory(vehicleType);
-	    
-	    // this factory also provide the engine in either Car engine or
-	    // Truck engine but not both
-	    Engine engine = factory.getEngine();
-	    engine.design();
-	    engine.manufacture();
-	    engine.test();
-	    
-	    // this factory also provide the tyre
-	    // Factory has two abstract methods Tire:getTyre() and
-	    // Engine:getEngine()
-	    Tyre tyre = factory.getTyre();
-	    tyre.design();
-	    tyre.manufacture();
-	} catch (UnknownVehicleTypeException e) {
-	    logger.warning(e.getMessage());
-	}
-	in.close();
-	
-```
+### UML Class Diagrams
+1. Engine and Tire manufacturer
+![Engine and Tire Factory](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/engineandtirefactory/img_abstract_factory_uml.png)
+2. Knife store
+![Knife store](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/knifes_shop_uml_img.png)
 
 ### Benefits
 - Loosely coupled code.

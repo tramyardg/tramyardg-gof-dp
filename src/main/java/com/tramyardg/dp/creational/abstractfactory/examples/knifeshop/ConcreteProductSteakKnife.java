@@ -1,6 +1,6 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
-public class SteakKnife extends Knife {
+public class ConcreteProductSteakKnife extends ProductKnife {
     
     @Override
     public void sharpen() {

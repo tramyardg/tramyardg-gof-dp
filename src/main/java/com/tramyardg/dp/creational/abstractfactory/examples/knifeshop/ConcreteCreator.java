@@ -1,13 +1,13 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
-public class BudgetKnifeStore extends KnifeStore {
+public class ConcreteCreator extends AbstractCreator {
 
     @Override
-    Knife createKnife(String knifeType) {
+    ProductKnife createKnife(String knifeType) {
 	if (knifeType == "chefs") {
-	    return new ChefsKnife();
+	    return new ConcreteProductChefsKnife();
 	} else if (knifeType == "steak") {
-	    return new SteakKnife();
+	    return new ConcreteProductSteakKnife();
 	} else {
 	    return null;   
 	}

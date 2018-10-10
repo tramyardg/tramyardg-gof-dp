@@ -6,6 +6,10 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
+import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.Engine;
+import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.Factory;
+import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.UnknownVehicleTypeException;
+
 import junit.framework.TestCase;
 
 public class AbstractFactoryTest extends TestCase {

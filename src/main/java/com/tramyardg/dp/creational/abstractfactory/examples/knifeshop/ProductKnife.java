@@ -1,6 +1,6 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
-public abstract class Knife {
+public abstract class ProductKnife {
 
     protected void sharpen() {
 	System.out.println("sharpening knife");

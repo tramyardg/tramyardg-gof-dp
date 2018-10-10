@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.KnifeStore" 
+  <class id="1" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.AbstractCreator" 
     project="tramyardg-gof-dp2" 
-    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/KnifeStore.java" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/AbstractCreator.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="831" y="286"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -12,9 +12,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.Knife" 
+  <class id="2" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.ProductKnife" 
     project="tramyardg-gof-dp2" 
-    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/Knife.java" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/ProductKnife.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="420" y="299"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -23,9 +23,10 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.SteakKnife" 
+  <class id="3" language="java" 
+    name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.ConcreteProductSteakKnife" 
     project="tramyardg-gof-dp2" 
-    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/SteakKnife.java" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/ConcreteProductSteakKnife.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="422" y="83"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -34,9 +35,10 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.ChefsKnife" 
+  <class id="4" language="java" 
+    name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.ConcreteProductChefsKnife" 
     project="tramyardg-gof-dp2" 
-    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/ChefsKnife.java" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/ConcreteProductChefsKnife.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="418" y="496"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -45,9 +47,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.BudgetKnifeStore" 
+  <class id="5" language="java" name="com.tramyardg.dp.creational.abstractfactory.examples.knifeshop.ConcreteCreator" 
     project="tramyardg-gof-dp2" 
-    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/BudgetKnifeStore.java" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/ConcreteCreator.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="831" y="490"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -60,21 +62,21 @@
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
-  <dependency id="7">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <generalization id="8">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="9">    
+  <generalization id="7">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="10">    
+  <dependency id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="9">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

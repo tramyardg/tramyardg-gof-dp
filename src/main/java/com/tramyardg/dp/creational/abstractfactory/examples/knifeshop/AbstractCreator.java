@@ -1,9 +1,9 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
-public abstract class KnifeStore {
+public abstract class AbstractCreator {
 
-    public Knife orderKnife(String knifeType) {
-	Knife knife;
+    public ProductKnife orderKnife(String knifeType) {
+	ProductKnife knife;
 	knife = createKnife(knifeType);
 	knife.sharpen();
 	knife.polish();
@@ -11,6 +11,6 @@ public abstract class KnifeStore {
 	return null;
     }
 
-    abstract Knife createKnife(String knifeType);
+    abstract ProductKnife createKnife(String knifeType);
     
 }
