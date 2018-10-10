@@ -1,5 +1,11 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.knifeshop;
 
+/**
+ * Delegates what type to create.
+ * 
+ * @author RAYMARTHINKPAD
+ *
+ */
 public class ConcreteCreator extends AbstractCreator {
 
     @Override
@@ -9,7 +15,7 @@ public class ConcreteCreator extends AbstractCreator {
 	} else if (knifeType == "steak") {
 	    return new ConcreteProductSteakKnife();
 	} else {
-	    return null;   
+	    return null;
 	}
     }
 

@@ -8,7 +8,7 @@
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ### Components
-1. Creator (abstract) - factory method defined here
+1. Creator (abstract)
 2. Concrete creator
 3. Product (abstract)
 4. Concrete products
