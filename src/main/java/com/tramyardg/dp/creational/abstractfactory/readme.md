@@ -14,12 +14,9 @@ Provide an interface for creating families of related or dependent objects witho
 4. Concrete products
 
 ### UML Class Diagrams
-1. Engine and Tire manufacturer
-![Engine and Tire Factory]
-(https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/engineandtirefactory/img_abstract_factory_uml.png)
-2. Knife store
-![Knife store]
-(https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/knifes_shop_uml_img.png)
+![Engine and Tire Factory](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/engineandtirefactory/img_abstract_factory_uml.png)
+
+![Knife store](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/knifes_shop_uml_img.png)
 
 ### Benefits
 - Loosely coupled code.
