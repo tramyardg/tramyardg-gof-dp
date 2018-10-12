@@ -2,28 +2,28 @@ package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactor
 
 import java.util.logging.Logger;
 
-public class TruckEngine implements Engine {
+public class ConcreteEngineCar implements IEngine {
 
-    private final Logger logger = Logger.getLogger(TruckEngine.class.getName());
+    private final Logger logger = Logger.getLogger(ConcreteEngineCar.class.getName());
     
     @Override
     public void design() {
-	logger.info("designing truck engine");
+	logger.info("designing car engine");
     }
 
     @Override
     public void manufacture() {
-	logger.info("manufacturing truck engine");
+	logger.info("manufacturing car engine");
     }
 
     @Override
     public void test() {
-	logger.info("testing truck engine");
+	logger.info("testing car engine");
     }
     
     @Override
     public String getVehicleType() {
-	return "truck";
+	return "car";
     }
 
 }

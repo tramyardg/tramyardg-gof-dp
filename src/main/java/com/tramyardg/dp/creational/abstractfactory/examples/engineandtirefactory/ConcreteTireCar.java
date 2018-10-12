@@ -2,9 +2,9 @@ package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactor
 
 import java.util.logging.Logger;
 
-public class CarTyre implements Tyre {
+public class ConcreteTireCar implements ITire {
 
-    private final Logger logger = Logger.getLogger(CarTyre.class.getName());
+    private final Logger logger = Logger.getLogger(ConcreteTireCar.class.getName());
     
     @Override
     public void design() {

@@ -1,6 +1,6 @@
 package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory;
 
-public interface Engine {
+public interface IEngine {
 
     public void design();
     public void manufacture();

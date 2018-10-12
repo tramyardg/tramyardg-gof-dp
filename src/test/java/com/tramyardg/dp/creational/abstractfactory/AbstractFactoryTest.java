@@ -6,8 +6,8 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
-import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.Engine;
-import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.Factory;
+import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.IEngine;
+import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.AbstractCreator;
 import com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactory.UnknownVehicleTypeException;
 
 import junit.framework.TestCase;
@@ -18,11 +18,11 @@ public class AbstractFactoryTest extends TestCase {
     
     @Test
     public void testUnknownVehicleTypeException() {
-	Factory factory; 
+	AbstractCreator factory; 
 	try {
-	    factory = Factory.getFactory("bicycle");
+	    factory = AbstractCreator.getFactory("bicycle");
 	   
-	    Engine bicycle = factory.getEngine();
+	    IEngine bicycle = factory.getEngine();
 	    bicycle.design();
 	    bicycle.manufacture();
 	    bicycle.test();
@@ -35,18 +35,18 @@ public class AbstractFactoryTest extends TestCase {
     
     @Test
     public void testGetVehicleType() {
-	Factory factory;
+	AbstractCreator factory;
 	try {
-	    factory = Factory.getFactory("bicycle");
-	    Engine engine = factory.getEngine();
+	    factory = AbstractCreator.getFactory("bicycle");
+	    IEngine engine = factory.getEngine();
 	    assertNotEquals(engine.getVehicleType(), "bicycle");
 	    
-	    factory = Factory.getFactory("car");
-	    Engine car = factory.getEngine();
+	    factory = AbstractCreator.getFactory("car");
+	    IEngine car = factory.getEngine();
 	    assertEquals(car.getVehicleType(), "car");
 	    
-	    factory = Factory.getFactory("truck");
-	    Engine truck = factory.getEngine();
+	    factory = AbstractCreator.getFactory("truck");
+	    IEngine truck = factory.getEngine();
 	    assertEquals(truck.getVehicleType(), "truck");
 	} catch (UnknownVehicleTypeException e) {
 	    logger.warning(e.getMessage());

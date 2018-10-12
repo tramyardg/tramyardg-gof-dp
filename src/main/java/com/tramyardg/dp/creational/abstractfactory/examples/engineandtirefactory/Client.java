@@ -12,15 +12,15 @@ public class Client {
 	Scanner in = new Scanner(System.in);
 	String vehicleType = in.nextLine().toLowerCase();
 
-	Factory factory;
+	AbstractCreator factory;
 	try {
 	    // will return the factory based on the vehicle type provided
 	    // just like a Singleton
-	    factory = Factory.getFactory(vehicleType);
+	    factory = AbstractCreator.getFactory(vehicleType);
 
 	    // this factory also provide the engine in either Car engine or
 	    // Truck engine but not both
-	    Engine engine = factory.getEngine();
+	    IEngine engine = factory.getEngine();
 	    engine.design();
 	    engine.manufacture();
 	    engine.test();
@@ -28,7 +28,7 @@ public class Client {
 	    // this factory also provide the tyre
 	    // Factory has two abstract methods Tire:getTyre() and
 	    // Engine:getEngine()
-	    Tyre tyre = factory.getTyre();
+	    ITire tyre = factory.getTyre();
 	    tyre.design();
 	    tyre.manufacture();
 
