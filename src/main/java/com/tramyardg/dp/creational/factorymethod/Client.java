@@ -19,19 +19,19 @@ public class Client {
 	
 	VehicleFactory factory = new VehicleFactory();
 	try {
-	    Vehicle car = factory.getVehicle("car");
+	    IVehicle car = factory.getVehicle("car");
 	    car.design();
 	    car.manufacture();
 	    
-	    Vehicle motorcycle = factory.getVehicle("motorcycle");
+	    IVehicle motorcycle = factory.getVehicle("motorcycle");
 	    motorcycle.design();
 	    motorcycle.manufacture();
 	    
-	    Vehicle truck = factory.getVehicle("truck");
+	    IVehicle truck = factory.getVehicle("truck");
 	    truck.design();
 	    truck.manufacture();
 	    
-	    Vehicle notSupported = factory.getVehicle("bus");
+	    IVehicle notSupported = factory.getVehicle("bus");
 	    notSupported.design();
 	    notSupported.manufacture();
 	} catch (VehicleTypeNotFoundException e) {

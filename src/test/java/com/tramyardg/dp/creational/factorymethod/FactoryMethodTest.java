@@ -13,7 +13,7 @@ public class FactoryMethodTest extends TestCase {
     @Test
     public void testVehicleType() {
 	VehicleFactory factory = new VehicleFactory();
-	Vehicle bus;
+	IVehicle bus;
 	try {
 	    bus = factory.getVehicle("bus");
 	    bus.design();

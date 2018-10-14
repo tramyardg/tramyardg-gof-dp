@@ -2,9 +2,9 @@ package com.tramyardg.dp.creational.factorymethod;
 
 import java.util.logging.Logger;
 
-public class Car implements Vehicle {
+public class ConcreteVehicleCar implements IVehicle {
 
-    private final Logger logger = Logger.getLogger(Car.class.getName());
+    private final Logger logger = Logger.getLogger(ConcreteVehicleCar.class.getName());
     
     @Override
     public void design() {

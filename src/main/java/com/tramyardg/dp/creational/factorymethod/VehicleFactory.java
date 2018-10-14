@@ -2,23 +2,29 @@ package com.tramyardg.dp.creational.factorymethod;
 
 public class VehicleFactory {
 
-    public Vehicle getVehicle(String vehicleType) throws VehicleTypeNotFoundException {
-	
-	Vehicle vehicle = null;
-	
+    /**
+     * 
+     * @param vehicleType
+     * @return concrete vehicle based on the vehicle type
+     * @throws VehicleTypeNotFoundException
+     */
+    public IVehicle getVehicle(String vehicleType) throws VehicleTypeNotFoundException {
+
+	IVehicle vehicle = null;
+
 	if (vehicleType == null) {
 	    return null;
 	}
 
 	switch (vehicleType) {
 	case "car":
-	    vehicle = new Car();
+	    vehicle = new ConcreteVehicleCar();
 	    break;
 	case "truck":
-	    vehicle = new Truck();
+	    vehicle = new ConcreteVehicleTruck();
 	    break;
 	case "motorcycle":
-	    vehicle = new Motorcycle();
+	    vehicle = new ConcreteVehicleMotorcycle();
 	    break;
 	default:
 	    throw new VehicleTypeNotFoundException();
