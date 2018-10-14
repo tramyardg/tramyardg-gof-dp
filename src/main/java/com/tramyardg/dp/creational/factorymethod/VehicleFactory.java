@@ -9,13 +9,10 @@ public class VehicleFactory {
      * @throws VehicleTypeNotFoundException
      */
     public IVehicle getVehicle(String vehicleType) throws VehicleTypeNotFoundException {
-
 	IVehicle vehicle = null;
-
 	if (vehicleType == null) {
 	    return null;
 	}
-
 	switch (vehicleType) {
 	case "car":
 	    vehicle = new ConcreteVehicleCar();
@@ -29,7 +26,6 @@ public class VehicleFactory {
 	default:
 	    throw new VehicleTypeNotFoundException();
 	}
-
 	return vehicle;
     }
 }

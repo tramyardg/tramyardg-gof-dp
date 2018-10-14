@@ -20,17 +20,9 @@ public class Client {
 	VehicleFactory factory = new VehicleFactory();
 	try {
 	    IVehicle car = factory.getVehicle("car");
-	    car.design();
-	    car.manufacture();
-	    
-	    IVehicle motorcycle = factory.getVehicle("motorcycle");
-	    motorcycle.design();
-	    motorcycle.manufacture();
-	    
-	    IVehicle truck = factory.getVehicle("truck");
-	    truck.design();
-	    truck.manufacture();
-	    
+	    car.design(); // prints Designing car
+	    car.manufacture(); // prints Manufacturing car
+	    // similarly, motorcycle and truck would be the same 
 	    IVehicle notSupported = factory.getVehicle("bus");
 	    notSupported.design();
 	    notSupported.manufacture();
