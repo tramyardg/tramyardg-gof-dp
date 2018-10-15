@@ -14,9 +14,8 @@ import java.util.logging.Logger;
 public class Client {
 
     static Logger logger = Logger.getLogger(Client.class.getName());
-    
+
     public static void main(String[] args) {
-	
 	VehicleFactory factory = new VehicleFactory();
 	try {
 	    IVehicle car = factory.getVehicle("car");

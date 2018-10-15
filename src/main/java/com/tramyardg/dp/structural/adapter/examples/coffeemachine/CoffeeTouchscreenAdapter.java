@@ -1,6 +1,6 @@
 package com.tramyardg.dp.structural.adapter.examples.coffeemachine;
 
-public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
+public class CoffeeTouchscreenAdapter implements ICoffeeMachine {
 
     private OldCoffeeMachine oldVendingMachine;
 

@@ -6,7 +6,9 @@
 Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
 ### UML Class Diagram
-
+#### The pattern will look like below:
+![Adapter UML diagram](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/adapter_pattern.png)
+ 
 #### Order Management System
 ##### Before adapter
 ![Adapter UML diagram before](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/adapter/examples/oms/img_adapter_before_uml.png)
