@@ -14,8 +14,13 @@ Provide an interface for creating families of related or dependent objects witho
 4. Concrete products
 
 ### UML Class Diagrams
+1. Abstract Factory Pattern <br>
+![General UML Factory Pattern](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/generalUML_factoryMethod.png)
+2. Engine Factory <br>
 ![Engine Factory](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/engineandtirefactory/engine_factory_uml_img.png)
+3. Tire Factory <br>
 ![Tire Factory](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/engineandtirefactory/tire_factory_uml_img.png)
+4. Knife Store <br>
 ![Knife store](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/creational/abstractfactory/examples/knifeshop/knifes_shop_uml_img.png)
 
 ### Benefits
