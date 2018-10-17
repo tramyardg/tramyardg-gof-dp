@@ -21,12 +21,13 @@ public class Chequing implements IAccount {
     }
 
     @Override
-    public void transfer(BigDecimal amount) {
+    public void transfer(IAccount toAccount, BigDecimal amount) {
 
     }
 
     @Override
-    public void getAccountNumber() {
+    public int getAccountNumber() {
+	return 0;
 
     }
 

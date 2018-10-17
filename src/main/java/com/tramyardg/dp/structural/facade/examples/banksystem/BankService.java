@@ -13,11 +13,19 @@ import java.util.Hashtable;
  */
 public class BankService {
     private Hashtable<Integer, IAccount> bankAccounts;
-    
+
     public BankService() {
 	this.bankAccounts = new Hashtable<Integer, IAccount>();
     }
-    
+
+    /**
+     *
+     * @param type
+     *            of account
+     * @param initAmount
+     *            initial amount
+     * @return account number after it was created
+     */
     public int createAccount(String type, BigDecimal initAmount) {
 	IAccount newAccount = null;
 	switch (type) {
@@ -27,8 +35,30 @@ public class BankService {
 	case "saving":
 	    newAccount = new Saving(initAmount);
 	    break;
+	default:
+	    System.out.println("Invalid account type");
 	}
-	return 0;
-	
+	if (newAccount != null) {
+	    // save this new bank account
+	    this.bankAccounts.put(newAccount.getAccountNumber(), newAccount);
+	    return newAccount.getAccountNumber();
+	}
+	return -1;
     }
+
+    /**
+     * 
+     * @param to
+     *            transfer amount to
+     * @param from
+     *            transfer amount from
+     * @param amount
+     *            to be transferred
+     */
+    public void transferMoney(int to, int from, BigDecimal amount) {
+	IAccount toAccount = this.bankAccounts.get(to);
+	IAccount fromAccount = this.bankAccounts.get(from);
+	fromAccount.transfer(toAccount, amount);
+    }
+
 }
