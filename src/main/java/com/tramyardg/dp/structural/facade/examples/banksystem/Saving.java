@@ -1,32 +1,42 @@
 package com.tramyardg.dp.structural.facade.examples.banksystem;
 
-import java.math.BigDecimal;
-
 public class Saving implements IAccount {
-    private BigDecimal amount;
 
-    public Saving(BigDecimal amount) {
-	this.amount = amount;
+    private double balance;
+    private int accountNumber;
+
+    public Saving(double amount) {
+	this.balance = amount;
     }
 
     @Override
-    public void deposit(BigDecimal amount) {
-
+    public void deposit(double amount) {
+	this.balance += amount;
     }
 
     @Override
-    public void withdraw(BigDecimal amount) {
-
+    public void withdraw(double amount) {
+	this.balance -= amount;
     }
 
     @Override
-    public void transfer(IAccount toAccount, BigDecimal amount) {
+    public void transfer(IAccount toAccount, double amount) {
 
     }
 
     @Override
     public int getAccountNumber() {
-	return 0;
+	return accountNumber;
+    }
+
+    @Override
+    public void setAccountNumber(int accountNumber) {
+	this.accountNumber = accountNumber;
+    }
+
+    @Override
+    public double getBalance() {
+	return balance;
     }
 
 }

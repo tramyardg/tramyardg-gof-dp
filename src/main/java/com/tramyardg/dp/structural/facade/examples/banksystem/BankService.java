@@ -1,6 +1,5 @@
 package com.tramyardg.dp.structural.facade.examples.banksystem;
 
-import java.math.BigDecimal;
 import java.util.Hashtable;
 
 /**
@@ -26,24 +25,20 @@ public class BankService {
      *            initial amount
      * @return account number after it was created
      */
-    public int createAccount(String type, BigDecimal initAmount) {
+    public IAccount createAccount(String type, double amount) {
 	IAccount newAccount = null;
 	switch (type) {
-	case "checking":
-	    newAccount = new Chequing(initAmount);
+	case "chequing":
+	    newAccount = new Chequing(amount);
+	    // generate and set account number
 	    break;
 	case "saving":
-	    newAccount = new Saving(initAmount);
+	    newAccount = new Saving(amount);
 	    break;
 	default:
 	    System.out.println("Invalid account type");
 	}
-	if (newAccount != null) {
-	    // save this new bank account
-	    this.bankAccounts.put(newAccount.getAccountNumber(), newAccount);
-	    return newAccount.getAccountNumber();
-	}
-	return -1;
+	return newAccount;
     }
 
     /**
@@ -55,7 +50,7 @@ public class BankService {
      * @param amount
      *            to be transferred
      */
-    public void transferMoney(int to, int from, BigDecimal amount) {
+    public void transferMoney(int to, int from, double amount) {
 	IAccount toAccount = this.bankAccounts.get(to);
 	IAccount fromAccount = this.bankAccounts.get(from);
 	fromAccount.transfer(toAccount, amount);
