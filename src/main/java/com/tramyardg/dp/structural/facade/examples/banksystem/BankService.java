@@ -1,6 +1,9 @@
 package com.tramyardg.dp.structural.facade.examples.banksystem;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+
+import org.apache.commons.lang.StringUtils;
 
 /**
  * This is the facade class that shows no hint of underlying implementation of
@@ -12,6 +15,10 @@ import java.util.Hashtable;
  */
 public class BankService {
     private Hashtable<Integer, IAccount> bankAccounts;
+
+    public Hashtable<Integer, IAccount> getBankAccounts() {
+	return bankAccounts;
+    }
 
     public BankService() {
 	this.bankAccounts = new Hashtable<Integer, IAccount>();
@@ -41,6 +48,26 @@ public class BankService {
 	return newAccount;
     }
 
+    public int createAccount2(String type, double amount) {
+	IAccount newAccount = null;
+	switch (type) {
+	case "chequing":
+	    newAccount = new Chequing(amount);
+	    // generate and set account number
+	    break;
+	case "saving":
+	    newAccount = new Saving(amount);
+	    break;
+	default:
+	    System.out.println("Invalid account type");
+	}
+	if (newAccount != null) {
+	    this.bankAccounts.put(newAccount.getAccountNumber(), newAccount);
+	    return newAccount.getAccountNumber();
+	}
+	return -1;
+    }
+
     /**
      * 
      * @param to
@@ -54,6 +81,14 @@ public class BankService {
 	IAccount toAccount = this.bankAccounts.get(to);
 	IAccount fromAccount = this.bankAccounts.get(from);
 	fromAccount.transfer(toAccount, amount);
+    }
+
+    public int generateRand5Num() {
+	ArrayList<Integer> list = new ArrayList();
+	for (int i = 0; i < 5; i++) {
+	    list.add((int) Math.floor(Math.random() * 10));
+	}
+	return Integer.parseInt(StringUtils.join(list.toArray()));
     }
 
 }
