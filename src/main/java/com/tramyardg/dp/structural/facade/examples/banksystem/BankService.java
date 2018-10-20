@@ -37,7 +37,7 @@ public class BankService {
 	switch (type) {
 	case "chequing":
 	    newAccount = new Chequing(amount);
-	    // generate and set account number
+	    newAccount.setAccountNumber(this.generateRand5Num());
 	    break;
 	case "saving":
 	    newAccount = new Saving(amount);

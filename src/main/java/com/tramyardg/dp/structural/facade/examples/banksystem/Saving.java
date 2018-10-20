@@ -21,7 +21,8 @@ public class Saving implements IAccount {
 
     @Override
     public void transfer(IAccount toAccount, double amount) {
-
+	toAccount.deposit(amount);
+	this.withdraw(amount);
     }
 
     @Override

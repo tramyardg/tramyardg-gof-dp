@@ -1,11 +1,10 @@
 package com.tramyardg.dp.structural.facade.examples.banksystem;
 
-
 public class Chequing implements IAccount {
 
     private double balance;
     private int accountNumber;
-    
+
     public Chequing(double balance) {
 	this.balance = balance;
     }
@@ -22,7 +21,8 @@ public class Chequing implements IAccount {
 
     @Override
     public void transfer(IAccount toAccount, double amount) {
-
+	toAccount.deposit(amount);
+	this.withdraw(amount);
     }
 
     @Override
