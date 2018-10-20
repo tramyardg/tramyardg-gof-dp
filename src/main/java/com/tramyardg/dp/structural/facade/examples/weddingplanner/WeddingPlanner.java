@@ -1,4 +1,4 @@
-package com.tramyardg.dp.structural.facade;
+package com.tramyardg.dp.structural.facade.examples.weddingplanner;
 
 public class WeddingPlanner {
 

@@ -54,6 +54,7 @@ public class BankService {
 	case "chequing":
 	    newAccount = new Chequing(amount);
 	    // generate and set account number
+	    newAccount.setAccountNumber(this.generateRand5Num());
 	    break;
 	case "saving":
 	    newAccount = new Saving(amount);
@@ -84,7 +85,7 @@ public class BankService {
     }
 
     public int generateRand5Num() {
-	ArrayList<Integer> list = new ArrayList();
+	ArrayList<Integer> list = new ArrayList<Integer>();
 	for (int i = 0; i < 5; i++) {
 	    list.add((int) Math.floor(Math.random() * 10));
 	}
