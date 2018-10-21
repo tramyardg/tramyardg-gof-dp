@@ -8,7 +8,7 @@
 Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes a subsystem easier to use.
 
 ### UML class diagram
-![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/img_facade_uml.png)
+![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/examples/weddingplanner/img_facade_uml.png)
 
 ### Main program (Client)
 
