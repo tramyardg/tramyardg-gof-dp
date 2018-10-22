@@ -10,6 +10,9 @@ Provide a unified interface to a set of interfaces in a subsystem. Facade define
 ### UML class diagram
 Wedding Planner <br/>
 ![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/examples/weddingplanner/img_facade_uml.png)
+<br/> 
+Bank System <br/>
+![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/examples/banksystem/bank-system.png)
 
 ### Main program (Client)
 
