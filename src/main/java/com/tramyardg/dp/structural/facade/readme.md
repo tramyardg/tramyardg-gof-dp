@@ -14,32 +14,6 @@ Wedding Planner <br/>
 Bank System <br/>
 ![Facade](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/facade/examples/banksystem/bank-system.png)
 
-### Main program (Client)
-
-```java
-	
-	LoggerSingleton.getInstance("Client").info("Wedding planning activities:");
-	WeddingPlanner planner = new WeddingPlanner();
-	planner.organize();
-	
-	// explanation:
-	// WeddingPlanner hides the complexity of a large subsystem.
-	// It basically does reservations, ordering, and organizes everything for you.
-	
-	/*
-	* com.tramyardg.dp.structural.facade.Client main
-	* INFO: Wedding planning activities:
-	* com.tramyardg.dp.structural.facade.Hall book
-	* INFO: Book marriage hall
-	* com.tramyardg.dp.structural.facade.Restaurant placeOrder
-	* INFO: Order food
-	* com.tramyardg.dp.structural.facade.Photographer book
-	* INFO: Book photographer
-	* com.tramyardg.dp.structural.facade.Vehicle reserve
-	* INFO: Reserve vehicle
-	*/
-	
-```
 
 ### Benefits
 - Number of objects the client interact with is minimal which reduces the compilation complexity.
