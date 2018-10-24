@@ -1,4 +1,5 @@
 ## Decorator
+Allows additional behaviours or responsibilities to be dynamically attached to an object, through the use of aggregation to combine behaviours at runtime. Aggregation is a design principle used to represent a "has-a" relationship between objects.
 
 ### When to use
 - To dynamically change the functionality of an object at runtime without impacting the 
