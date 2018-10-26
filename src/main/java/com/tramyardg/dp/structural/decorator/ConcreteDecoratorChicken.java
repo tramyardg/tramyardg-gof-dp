@@ -2,9 +2,9 @@ package com.tramyardg.dp.structural.decorator;
 
 import com.tramyardg.util.LoggerSingleton;
 
-public class ChickenToppings extends ToppingDecorator {
+public class ConcreteDecoratorChicken extends AbstractDecorator {
 
-    public ChickenToppings(Pizza pizza) {
+    public ConcreteDecoratorChicken(IComponentPizza pizza) {
 	super(pizza);
     }
     

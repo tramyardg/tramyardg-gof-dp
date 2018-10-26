@@ -4,13 +4,13 @@ public class Client {
 
     public static void main(String[] args) {
 	
-	Pizza[] orders = {
-		new PepperoniToppings(new PlainPizza()),
-		new MushroomToppings(new ChickenToppings(new PlainPizza())),
-		new ChickenToppings(new PlainPizza())
+	IComponentPizza[] orders = {
+		new ConcreteDecoratorPepperoni(new ConcreteComponentPlainPizza()),
+		new ConcreteDecoratorMushroom(new ConcreteDecoratorChicken(new ConcreteComponentPlainPizza())),
+		new ConcreteDecoratorChicken(new ConcreteComponentPlainPizza())
 	};
 	
-	for (Pizza pizza : orders) {
+	for (IComponentPizza pizza : orders) {
 	    pizza.prepare();
 	}
 	

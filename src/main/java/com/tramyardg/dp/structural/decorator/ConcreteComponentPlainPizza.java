@@ -8,7 +8,7 @@ import com.tramyardg.util.LoggerSingleton;
  * @author RAYMARTHINKPAD
  *
  */
-public class PlainPizza implements Pizza {
+public class ConcreteComponentPlainPizza implements IComponentPizza {
 
     @Override
     public void prepare() {

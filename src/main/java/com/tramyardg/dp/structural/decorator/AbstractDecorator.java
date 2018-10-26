@@ -7,12 +7,12 @@ package com.tramyardg.dp.structural.decorator;
  * @author RAYMARTHINKPAD
  *
  */
-public abstract class ToppingDecorator implements Pizza {
+public abstract class AbstractDecorator implements IComponentPizza {
 
-    private Pizza pizza;
+    private IComponentPizza pizza;
     
     // Accepts Pizza type classes (a class that implements Pizza interface)
-    public ToppingDecorator(Pizza pizza) {
+    public AbstractDecorator(IComponentPizza pizza) {
 	this.pizza = pizza;
     }
     

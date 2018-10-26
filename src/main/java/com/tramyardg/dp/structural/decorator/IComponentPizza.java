@@ -1,6 +1,6 @@
 package com.tramyardg.dp.structural.decorator;
 
-public interface Pizza {
+public interface IComponentPizza {
 
     void prepare();
     
