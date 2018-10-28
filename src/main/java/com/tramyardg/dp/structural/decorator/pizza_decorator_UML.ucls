@@ -1,93 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="com.tramyardg.dp.structural.decorator.Pizza" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/Pizza.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="469" y="63"/>    
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="com.tramyardg.dp.structural.decorator.IComponentPizza" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/IComponentPizza.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="511" y="123"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="2" language="java" name="com.tramyardg.dp.structural.decorator.PlainPizza" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/PlainPizza.java" binary="false" 
+  <class id="2" language="java" name="com.tramyardg.dp.structural.decorator.AbstractDecorator" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/AbstractDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="271" y="200"/>    
+    <position height="-1" width="-1" x="744" y="296"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.tramyardg.dp.structural.decorator.ToppingDecorator" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/ToppingDecorator.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="679" y="174"/>    
+  <class id="3" language="java" name="com.tramyardg.dp.structural.decorator.ConcreteDecoratorChicken" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/ConcreteDecoratorChicken.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="519" y="485"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.tramyardg.dp.structural.decorator.MushroomToppings" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/MushroomToppings.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="460" y="349"/>    
+  <class id="4" language="java" name="com.tramyardg.dp.structural.decorator.ConcreteDecoratorMushroom" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/ConcreteDecoratorMushroom.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="742" y="607"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="com.tramyardg.dp.structural.decorator.PepperoniToppings" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/PepperoniToppings.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="886" y="354"/>    
+  <class id="5" language="java" name="com.tramyardg.dp.structural.decorator.ConcreteDecoratorPepperoni" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/ConcreteDecoratorPepperoni.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="999" y="493"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.tramyardg.dp.structural.decorator.ChickenToppings" project="gof-dp" 
-    file="/gof-dp/src/main/java/com/tramyardg/dp/structural/decorator/ChickenToppings.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="678" y="358"/>    
+  <class id="6" language="java" name="com.tramyardg.dp.structural.decorator.ConcreteComponentPlainPizza" 
+    project="tramyardg-gof-dp2" 
+    file="/tramyardg-gof-dp2/src/main/java/com/tramyardg/dp/structural/decorator/ConcreteComponentPlainPizza.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="255" y="330"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="7">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="8">    
-    <end type="SOURCE" refId="3"/>    
+  <realization id="7">    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
-  <realization id="9">    
+  <realization id="8">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <generalization id="10">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="11">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <association id="12">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="13" name="pizza"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+  <association id="11">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="12" name="pizza"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

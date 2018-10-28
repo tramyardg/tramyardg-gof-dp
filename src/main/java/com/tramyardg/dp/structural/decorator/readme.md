@@ -14,7 +14,7 @@ alternative to subclassing for extending functionality.
 
 ### UML class diagram
 ![Decorator UML](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/decorator_UML.png)
-![Decorator](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/img_decorator_uml.png)
+![Decorator](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/pizza_decorator_UML.png)
 
 
 ### Benefits
