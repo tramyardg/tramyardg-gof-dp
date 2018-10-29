@@ -29,5 +29,6 @@
 - [ ] Visitor
 
 Credits:
-- [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en)
-- [University of Alberta - Design Patterns Course Notes](https://www.coursera.org/learn/design-patterns)![University of Alberta logo](https://s3.amazonaws.com/coursera_assets/xdp/ualberta.svg)
+* [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en)
+* [University of Alberta - Design Patterns Course Notes](https://www.coursera.org/learn/design-patterns) <br>
+![University of Alberta logo](https://s3.amazonaws.com/coursera_assets/xdp/ualberta.svg)
