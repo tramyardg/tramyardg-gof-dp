@@ -30,5 +30,4 @@
 
 Credits:
 - [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en)
-- [University of Alberta - Design Patterns Course Notes](https://www.coursera.org/learn/design-patterns)
-![Image of Yaktocat](https://s3.amazonaws.com/coursera_assets/xdp/ualberta.svg)
+- [University of Alberta - Design Patterns Course Notes](https://www.coursera.org/learn/design-patterns)![University of Alberta logo](https://s3.amazonaws.com/coursera_assets/xdp/ualberta.svg)
