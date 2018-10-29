@@ -1,6 +1,4 @@
 ## Design Patterns
-No copyright infringement intended. For educational purpose only.
-All credits goes to the app [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en).
 
 ### Creational
 - [x] [Abstract Factory](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/creational/abstractfactory)
@@ -29,3 +27,8 @@ All credits goes to the app [GoF Design Patterns of japeesoft](https://play.goog
 - [x] [State](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/state)
 - [x] [Template Method](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/templatemethod)
 - [ ] Visitor
+
+Credits:
+* [GoF Design Patterns of japeesoft](https://play.google.com/store/apps/details?id=com.jaypeesoft.dpad&hl=en)
+* [University of Alberta - Design Patterns Course Notes](https://www.coursera.org/learn/design-patterns) <br>
+![University of Alberta logo](https://s3.amazonaws.com/coursera_assets/xdp/ualberta.svg)
