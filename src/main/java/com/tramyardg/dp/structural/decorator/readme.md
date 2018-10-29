@@ -13,7 +13,9 @@ Attach additional responsibilities to an object dynamically. It provides a flexi
 alternative to subclassing for extending functionality.
 
 ### UML class diagram
-![Decorator UML](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/decorator_UML.png)
+Typical decorator design pattern<br />
+![Decorator UML](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/decorator_UML.png) <br />
+Pizza decorator example<br />
 ![Decorator](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/decorator/pizza_decorator_UML.png)
 
 
