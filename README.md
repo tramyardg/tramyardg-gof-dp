@@ -14,7 +14,7 @@
 - [x] [Decorator](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/decorator)
 - [x] [Facade](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/facade)
 - [x] [Flyweight](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/flyweight)
-- [ ] Proxy
+- [ ] [Proxy](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/structural/proxy)
 
 ### Behavioral
 - [x] [Chain of Responsibility](https://github.com/tramyardg/tramyardg-gof-dp/tree/master/src/main/java/com/tramyardg/dp/behavioral/chainofresponsibility)
