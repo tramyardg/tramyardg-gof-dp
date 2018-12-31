@@ -4,3 +4,8 @@ A proxy design pattern permits a proxy class to represent the original "subject"
 ## UML Diagram
 The UML diagram below demonstrates the proxy design pattern.
 ![Proxy UML Diagram](https://github.com/tramyardg/tramyardg-gof-dp/blob/master/src/main/java/com/tramyardg/dp/structural/proxy/proxy-dp-uml.png)
+
+### Pattern implementation breakdown 
+1. Design the subject interface
+2. Implementation of the real subject class
+3. Implement the proxy class
