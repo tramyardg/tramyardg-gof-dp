@@ -2,7 +2,8 @@ package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactor
 
 public interface ITire {
 
-    public void design();
-    public void manufacture();
-    
+    void design();
+
+    void manufacture();
+
 }

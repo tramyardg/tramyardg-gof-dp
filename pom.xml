@@ -4,7 +4,19 @@
 	<groupId>gof-dp</groupId>
 	<artifactId>gof-dp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Tramyardg GOF DP</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>Tramyardg GOF DP</name>
 	<description>gang of four design patterns</description>
 
 	<dependencies>

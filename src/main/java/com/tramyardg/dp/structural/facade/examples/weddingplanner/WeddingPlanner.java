@@ -6,19 +6,19 @@ public class WeddingPlanner {
     private Restaurant restaurant;
     private Photographer photographer;
     private Vehicle vehicle;
-    
+
     public WeddingPlanner() {
-	hall = new Hall();
-	restaurant = new Restaurant();
-	photographer = new Photographer();
-	vehicle = new Vehicle();
+        hall = new Hall();
+        restaurant = new Restaurant();
+        photographer = new Photographer();
+        vehicle = new Vehicle();
     }
-    
-    public void organize() {
-	hall.book();
-	restaurant.placeOrder();
-	photographer.book();
-	vehicle.reserve();
+
+    void organize() {
+        hall.book();
+        restaurant.placeOrder();
+        photographer.book();
+        vehicle.reserve();
     }
 
 }

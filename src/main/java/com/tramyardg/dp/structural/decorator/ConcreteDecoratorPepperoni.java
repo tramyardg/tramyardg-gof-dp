@@ -5,13 +5,13 @@ import com.tramyardg.util.LoggerSingleton;
 public class ConcreteDecoratorPepperoni extends AbstractDecorator {
 
     public ConcreteDecoratorPepperoni(IComponentPizza pizza) {
-	super(pizza);
+        super(pizza);
     }
-    
+
     @Override
     public void prepare() {
-	super.prepare();
-	LoggerSingleton.getInstance(this.getClass().getName()).info(" + Pepperoni");
+        super.prepare();
+        LoggerSingleton.getInstance(this.getClass().getName()).info(" + Pepperoni");
     }
 
 }

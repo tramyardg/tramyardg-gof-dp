@@ -7,13 +7,13 @@ import com.tramyardg.util.LoggerSingleton;
 public class Rectangle extends Shape {
 
     public Rectangle(Color color) {
-	super(color);
+        super(color);
     }
 
     @Override
     public void draw() {
-	LoggerSingleton.getInstance(Rectangle.class.getName()).info("draw rectangle in ");
-	color.applyColor();
+        LoggerSingleton.getInstance(Rectangle.class.getName()).info("draw rectangle in ");
+        color.applyColor();
     }
 
 }

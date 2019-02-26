@@ -4,12 +4,12 @@ public class ConcreteCreatorTruck extends AbstractCreator {
 
     @Override
     public IEngine getEngine() {
-	return new ConcreteEngineTruck();
+        return new ConcreteEngineTruck();
     }
 
     @Override
     public ITire getTyre() {
-	return new ConcreteTireTruck();
+        return new ConcreteTireTruck();
     }
 
 }

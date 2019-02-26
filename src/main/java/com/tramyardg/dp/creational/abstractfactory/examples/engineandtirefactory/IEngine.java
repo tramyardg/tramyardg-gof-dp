@@ -2,9 +2,12 @@ package com.tramyardg.dp.creational.abstractfactory.examples.engineandtirefactor
 
 public interface IEngine {
 
-    public void design();
-    public void manufacture();
-    public void test();
-    public String getVehicleType();
-    
+    void design();
+
+    void manufacture();
+
+    void test();
+
+    String getVehicleType();
+
 }

@@ -6,24 +6,23 @@ import java.util.logging.Logger;
 
 /**
  * This old OMS accepts <b>XML</b> file as input.
- * 
- * @author tramyardg
  *
+ * @author tramyardg
  */
-public class LegacyOMS {
+class LegacyOMS {
 
     private final Logger logger = Logger.getLogger(LegacyOMS.class.getName());
 
-    List<Item> cart = new ArrayList<>();
-    List<Payment> payments = new ArrayList<>();
+    private List<Item> cart = new ArrayList<Item>();
+    private List<Payment> payments = new ArrayList<Payment>();
 
-    public void addItem(Item itemXML) {
-	cart.add(itemXML);
-	logger.info(itemXML.getName() + " " + itemXML.getPrice());
+    void addItem(Item itemXML) {
+        cart.add(itemXML);
+        logger.info(itemXML.getName() + " " + itemXML.getPrice());
     }
 
-    public void makePayment(Payment paymentXML) {
-	payments.add(paymentXML);
-	paymentXML.pay();
+    void makePayment(Payment paymentXML) {
+        payments.add(paymentXML);
+        paymentXML.pay();
     }
 }

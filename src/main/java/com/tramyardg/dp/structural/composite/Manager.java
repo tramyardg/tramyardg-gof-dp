@@ -1,62 +1,60 @@
 package com.tramyardg.dp.structural.composite;
 
+import com.tramyardg.util.LoggerSingleton;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import com.tramyardg.util.LoggerSingleton;
 
 public class Manager implements Employee {
 
     private String name;
     private String department;
     private double salary;
-    List<Employee> employees = new ArrayList<>();
-    
+    private List<Employee> employees = new ArrayList<Employee>();
+
     public Manager(String name, String department, double salary) {
-	this.name = name;
-	this.department = department;
-	this.salary = salary;
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
     }
-    
+
     @Override
     public void add(Employee e) {
-	employees.add(e);
+        employees.add(e);
     }
 
     @Override
     public void remove(Employee e) {
-	employees.remove(e);
+        employees.remove(e);
     }
 
     @Override
     public String getName() {
-	return name;
+        return name;
     }
 
     @Override
     public String getDepartment() {
-	return department;
+        return department;
     }
-    
+
     @Override
     public double getSalary() {
-	return salary;
+        return salary;
     }
-    
+
     @Override
     public void print() {
-	LoggerSingleton.getInstance(this.getClass().getName()).info("[name=" + getName() + ", salary=" + getSalary() + "]");
-	Iterator<Employee> empIterator = employees.iterator();
-	while (empIterator.hasNext()) {
-	    Employee emp = empIterator.next();
-	    emp.print();
-	}
+        LoggerSingleton.getInstance(this.getClass().getName()).info("[name=" + getName() + ", salary=" + getSalary() + "]");
+        for (Employee emp : employees) {
+            emp.print();
+        }
     }
 
     @Override
     public Employee getChild(int i) {
-	return employees.get(i);
+        return employees.get(i);
     }
 
 }

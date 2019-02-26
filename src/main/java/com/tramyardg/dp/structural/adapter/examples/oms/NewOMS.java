@@ -6,23 +6,23 @@ import java.util.logging.Logger;
 
 /**
  * The new OMS accepts JSON format as input.
- * @author tramyardg
  *
+ * @author tramyardg
  */
-public class NewOMS {
+class NewOMS {
 
     private final Logger logger = Logger.getLogger(NewOMS.class.getName());
-    
-    List<Item> cart = new ArrayList<>();
-    List<Payment> payments = new ArrayList<>();
- 
-    public void addToBasket(Item itemJSON) {
-	cart.add(itemJSON);
-	logger.info(itemJSON.getName() + " " + itemJSON.getPrice());
+
+    private List<Item> cart = new ArrayList<Item>();
+    private List<Payment> payments = new ArrayList<Payment>();
+
+    void addToBasket(Item itemJSON) {
+        cart.add(itemJSON);
+        logger.info(itemJSON.getName() + " " + itemJSON.getPrice());
     }
-    
-    public void pay(Payment paymentJSON) {
-	payments.add(paymentJSON);
-	paymentJSON.pay();
+
+    void pay(Payment paymentJSON) {
+        payments.add(paymentJSON);
+        paymentJSON.pay();
     }
 }

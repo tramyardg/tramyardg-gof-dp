@@ -1,6 +1,6 @@
 package com.tramyardg.dp.structural.flyweight.trees;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 public class Tree {
 
@@ -9,13 +9,13 @@ public class Tree {
     private TreeType type;
 
     public Tree(int x, int y, TreeType type) {
-	this.x = x;
-	this.y = y;
-	this.type = type;
+        this.x = x;
+        this.y = y;
+        this.type = type;
     }
 
     public void draw(Graphics g) {
-	type.draw(g, x, y);
+        type.draw(g, x, y);
     }
 
 }

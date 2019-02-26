@@ -10,11 +10,11 @@ import com.tramyardg.dp.structural.bridge.shape.Square;
 public class BridgeClient {
 
     public static void main(String[] args) {
-	Shape[] shapes = { new Circle(new Red()), new Rectangle(new Green()), new Square(new Blue()) };
+        Shape[] shapes = {new Circle(new Red()), new Rectangle(new Green()), new Square(new Blue())};
 
-	for (Shape shape : shapes) {
-	    shape.draw();
-	}
+        for (Shape shape : shapes) {
+            shape.draw();
+        }
     }
 
 }

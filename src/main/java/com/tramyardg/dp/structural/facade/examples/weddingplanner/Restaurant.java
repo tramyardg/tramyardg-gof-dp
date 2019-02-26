@@ -2,10 +2,10 @@ package com.tramyardg.dp.structural.facade.examples.weddingplanner;
 
 import com.tramyardg.util.LoggerSingleton;
 
-public class Restaurant {
+class Restaurant {
 
-    public void placeOrder() {
-	LoggerSingleton.getInstance(this.getClass().getName()).info("Order food");
+    void placeOrder() {
+        LoggerSingleton.getInstance(this.getClass().getName()).info("Order food");
     }
-    
+
 }

@@ -7,13 +7,13 @@ import com.tramyardg.util.LoggerSingleton;
 public class Circle extends Shape {
 
     public Circle(Color color) {
-	super(color);
+        super(color);
     }
 
     @Override
     public void draw() {
-	LoggerSingleton.getInstance(Circle.class.getName()).info("draw circle in ");
-	color.applyColor();
+        LoggerSingleton.getInstance(Circle.class.getName()).info("draw circle in ");
+        color.applyColor();
     }
 
 }

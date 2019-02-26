@@ -7,7 +7,7 @@ public class Green implements Color {
 
     @Override
     public void applyColor() {
-	LoggerSingleton.getInstance(Green.class.getName()).info("green color");
+        LoggerSingleton.getInstance(Green.class.getName()).info("green color");
     }
 
 }

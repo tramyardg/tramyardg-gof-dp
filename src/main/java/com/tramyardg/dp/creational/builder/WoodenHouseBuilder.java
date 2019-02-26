@@ -3,37 +3,37 @@ package com.tramyardg.dp.creational.builder;
 /**
  * A WoodenHouseBuilder is responsible for
  * creating a wooded house object.
- * @author tramyardg
  *
+ * @author tramyardg
  */
 public class WoodenHouseBuilder implements HouseBuilder {
 
     private House house;
-    
+
     public WoodenHouseBuilder() {
-	house = new House();
+        house = new House();
     }
 
     @Override
     public HouseBuilder buildFloor() {
-	house.setFloorType("wood");
-	return this;
+        house.setFloorType("wood");
+        return this;
     }
 
     @Override
     public HouseBuilder buildWall() {
-	house.setWallType("wood");
-	return this;
+        house.setWallType("wood");
+        return this;
     }
 
     @Override
     public HouseBuilder buildRoof() {
-	house.setRoofType("wood");
-	return this;
+        house.setRoofType("wood");
+        return this;
     }
 
     @Override
     public House build() {
-	return house;
+        return house;
     }
 }

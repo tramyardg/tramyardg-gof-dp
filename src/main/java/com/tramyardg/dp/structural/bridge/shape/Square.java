@@ -7,13 +7,13 @@ import com.tramyardg.util.LoggerSingleton;
 public class Square extends Shape {
 
     public Square(Color color) {
-	super(color);
+        super(color);
     }
 
     @Override
     public void draw() {
-	LoggerSingleton.getInstance(Square.class.getName()).info("draw square in ");
-	color.applyColor();
+        LoggerSingleton.getInstance(Square.class.getName()).info("draw square in ");
+        color.applyColor();
     }
 
 }

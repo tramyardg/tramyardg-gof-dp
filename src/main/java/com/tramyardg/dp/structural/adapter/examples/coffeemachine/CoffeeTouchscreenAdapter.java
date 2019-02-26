@@ -5,17 +5,17 @@ public class CoffeeTouchscreenAdapter implements ICoffeeMachine {
     private OldCoffeeMachine oldVendingMachine;
 
     public CoffeeTouchscreenAdapter() {
-	oldVendingMachine = new OldCoffeeMachine();
+        oldVendingMachine = new OldCoffeeMachine();
     }
 
     @Override
     public void chooseFirstSelection() {
-	oldVendingMachine.selectA();
+        oldVendingMachine.selectA();
     }
 
     @Override
     public void chooseSecondSelection() {
-	oldVendingMachine.selectB();
+        oldVendingMachine.selectB();
     }
 
 }

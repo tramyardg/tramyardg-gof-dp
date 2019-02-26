@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 public class Singleton {
 
     private final Logger logger = Logger.getLogger(Singleton.class.getName());
-    
+
     // singleton object
     private static Singleton instance = null;
 
@@ -18,15 +18,15 @@ public class Singleton {
 
     // method to get singleton object
     public static Singleton getInstance() {
-	if (instance == null) {
-	    instance = new Singleton();
-	}
-	return instance;
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
     }
-    
-    public void printUniqueObjectId() {
-	int uniqueObjId = System.identityHashCode(this);
-	//logger.log(Level.SEVERE, "Something went wrong: {0} ", message);  // String formatting only applied if needed
-	logger.log(Level.INFO, "Unique object id: {0}", uniqueObjId);
+
+    void printUniqueObjectId() {
+        int uniqueObjId = System.identityHashCode(this);
+        //logger.log(Level.SEVERE, "Something went wrong: {0} ", message);  // String formatting only applied if needed
+        logger.log(Level.INFO, "Unique object id: {0}", uniqueObjId);
     }
 }

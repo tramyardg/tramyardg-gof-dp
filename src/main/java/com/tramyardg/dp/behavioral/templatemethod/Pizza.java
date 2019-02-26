@@ -6,10 +6,10 @@ public abstract class Pizza {
 
     // this will be called in client program
     // and it executes the method in the order given
-    public final void preparePizza() {
-	addIngredients();
-	addToppings();
-	cook();
+    final void preparePizza() {
+        addIngredients();
+        addToppings();
+        cook();
     }
 
     protected abstract void addToppings();
@@ -17,7 +17,7 @@ public abstract class Pizza {
     protected abstract void addIngredients();
 
     protected void cook() {
-	LoggerSingleton.getInstance(this.getClass().getName()).info("Cook for 5 minutes");
+        LoggerSingleton.getInstance(this.getClass().getName()).info("Cook for 5 minutes");
     }
 
 }
